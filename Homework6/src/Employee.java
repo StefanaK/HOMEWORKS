@@ -1,26 +1,28 @@
 
 
-public class Employee extends Person {
-    double daySalary;
 
-    Employee(String name, int age, boolean isMan, double daySalary){
+
+public class Employee extends Person {
+    protected double daySalary;
+
+    protected Employee(String name, int age, boolean isMan, double daySalary){
         super(name, age, isMan);
         this.daySalary = daySalary;
     }
 
-    void calculateOvertime(double hours){
+    protected void calculateOvertime(double hours){
         double sum;
-        if(age<18){
-            System.out.println(name + " is not allowed to work overtime!!!");
+        if(getAge()<18){
+            System.out.println(getName() + " is not allowed to work overtime!!!");
         } else {
             sum = hours*daySalary*1.5;
-            System.out.println(name + " will receive " + sum + " lv for overtime!");
+            System.out.println(getName() + " will receive " + sum + " lv for overtime!");
         }
     }
 
-    void showEmployeeInfo(){
+    protected void showEmployeeInfo(){
 
-            System.out.println(name + " is " + age + " years old ." + "Is man - " + isMan + ". " + name + "'s day salary is " + daySalary);
+            System.out.println(getName() + " is " + getAge() + " years old ." + "Is man - " + isMan + ". " + getName() + "'s day salary is " + daySalary);
 
     }
 }

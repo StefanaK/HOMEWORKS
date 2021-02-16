@@ -1,6 +1,8 @@
 public class College {
     public static void main(String[] args) {
 
+        //Person stefi = new Person("Stefana Kazandzhieva", 33, false);
+
         Student Ivan = new Student("Ivan Ivanov", "Pharmacy", 21);
         Ivan.grade = 5.20;
 
@@ -28,6 +30,8 @@ public class College {
         Student Rosi = new Student("Rositsa Dieva", "Marketing", 25);
 
         StudentGroup Marketing = new StudentGroup("Marketing");
+
+        //stefi.showPersonInfo();
 
         System.out.println(Ivan.toString());
 

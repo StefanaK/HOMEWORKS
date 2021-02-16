@@ -1,17 +1,38 @@
 
 
+
 public class Person {
-    String name;
-    int age;
+    final private String NAME;
+    final private int AGE;
     Boolean isMan;
 
-    Person(String name, int age, boolean isMan){
-        this.name = name;
-        this.age = age;
+    protected Person(String name, int age, boolean isMan) {
+        this.NAME = name;
+        this.AGE = age;
         this.isMan = isMan;
     }
 
-    void showPersonInfo(){
-        System.out.println(name + " is " + age + " years old ." + "Is man - " + isMan);
+    protected void showPersonInfo() {
+
+        System.out.println(NAME + " is " + AGE + " years old ." + "Is man - " + isMan);
     }
+
+
+    public String getName() {
+        return NAME;
+    }
+
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+
+    public int getAge() {
+        return AGE;
+    }
+
+//    public void setAge(int age) {
+//         this.age = age;
+//    }
+
 }
+
