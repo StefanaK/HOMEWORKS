@@ -1,9 +1,9 @@
 
 
-public class newStudent extends Person{
+public class NewStudent extends Person{
     double score;
 
-    newStudent(String name, int age, boolean isMan, double score){
+    NewStudent(String name, int age, boolean isMan, double score){
         super(name, age, isMan);
         this.score = score;
     }
