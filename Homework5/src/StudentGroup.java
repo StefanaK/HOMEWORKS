@@ -31,7 +31,7 @@ public class StudentGroup {
                 }
             }
 
-            if (s.subject != groupSubject) {
+            if (!s.subject.equals(groupSubject)) {
                 System.out.println(s.name + " studies " + s.subject + " and can't be add to StudentGroup: " + groupSubject);
 
             }
@@ -56,7 +56,7 @@ public class StudentGroup {
                 max.grade = students[i].grade;
             }
         }
-        return max.name;
+        return max.name + " - " + max.grade;
     }
 
        void printStudentsInGroup () {
