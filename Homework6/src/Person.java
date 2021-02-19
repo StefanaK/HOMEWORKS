@@ -18,7 +18,7 @@ public class Person {
     }
 
 
-    public String getName() {
+    protected String getName() {
         return NAME;
     }
 
@@ -26,7 +26,7 @@ public class Person {
 //        this.name = name;
 //    }
 
-    public int getAge() {
+    protected int getAge() {
         return AGE;
     }
 
