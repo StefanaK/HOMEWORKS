@@ -1,5 +1,4 @@
-
-
+package Homework6;
 
 
 public class Employee extends Person {

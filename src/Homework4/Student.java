@@ -1,20 +1,22 @@
+package Homework4;
+
 public class Student {
-    String name;
-    String subject;
-    double grade;
+    public  String name;
+    public String subject;
+    public double grade;
     int yearInCollege;
-    int age;
+    public int age;
     boolean isDegree;
     double money;
 
-    Student() {
+    public Student() {
         this.grade = 4.0;
         this.yearInCollege = 1;
         this.isDegree = false;
         this.money = 0;
     }
 
-    Student(String newName, String newSubject, int newAge) {
+    public Student(String newName, String newSubject, int newAge) {
         this();
         this.name = newName;
         this.subject =newSubject;
@@ -26,7 +28,7 @@ public class Student {
                 " The grade of this student is " + this.grade + ". " + this.name + " is degree - " + this.isDegree + ". This student has " + this.money + " leva.";
     }
 
-    void upYear() {
+    public void upYear() {
         if (!isDegree && yearInCollege<3) {
             yearInCollege++;
             System.out.println(name + " is " + yearInCollege + " year in the college!");
@@ -37,7 +39,7 @@ public class Student {
         }
 
 
-    double receiveScholarship(double min, double amount) {
+    public double receiveScholarship(double min, double amount) {
         if (age < 30 && grade >= min) {
             money += amount;
             System.out.print(name + " will receive scholarship of: ");

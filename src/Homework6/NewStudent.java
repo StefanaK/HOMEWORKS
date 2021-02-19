@@ -1,8 +1,7 @@
+package Homework6;
 
 
-
-
-public class NewStudent extends Person{
+public class NewStudent extends Person {
     protected double score;
 
     protected NewStudent(String name, int age, boolean isMan, double score){
